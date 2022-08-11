@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../../../css/output.css">
+    <link rel="stylesheet" href="../../../css/global.css">
+</head>
+<body>
+    <div class="w-full py-2 px-5">
+        <div class="flex text-sm">
+        <a href="" class="link__color mx-2">Home</a>>
+        <a href="" class="link__color mx-2">Account</a>>
+        <p class="mx-2" id="status">Home</p>
+        </div>
+    </div>
+    <div class="w-full my-10 flex items-center justify-center">
+        <div>
+            <div class="flex">
+                <button class="py-2 px-3 flex-1 border-black border-b-2 text-black transition-all ease-in-out duration-300" id="loginTab">Login</button>
+                <button class="py-2 px-3 flex-1 border-slate-300 border-b-2 text-slate-400 transition-all ease-in-out duration-300" id="signUpTab">Sign Up</button>
+            </div>
+            <div id="loginPage">
+            <div class="mt-5">
+                <p class="text-gray-400 text-xs">Mobile Number or Email address*</p>
+                <input type="text" class="w-full ring-1 ring-gray-400 my-2 rounded-sm py-2 placeholder:text-xs px-3 transition-all ease-in-out duration-300 hover:ring-green-400 focus:outline-none text-sm" placeholder="Enter your mobile number or email address">
+                <div class="mt-2 flex">
+                <p class="text-gray-400 text-xs flex-1">Password*</p>
+                <a id="forgotPassBtn" href="" class="text-yellow-500 underline text-xs flex-1 text-right">Forgot Password?</a>
+                </div>
+                <div class="flex items-center">
+                    <input type="password" class="w-full ring-1 ring-gray-400 my-2 rounded-sm py-2 placeholder:text-xs px-3 transition-all ease-in-out duration-300 hover:ring-green-400 focus:outline-none text-sm" placeholder="Please type your password" id="logPass"><i class="fa-solid fa-eye text-gray-500 -ml-7 cursor-pointer" id="logToggle"></i>
+                </div>
+                <button class="w-full py-2 rounded-sm uppercase text-white bg-teal-500 transition-all ease-in-out duration-300 hover:bg-teal-600 text-sm font-semibold">Log in <i class="fa-solid fa-arrow-right-long ml-2"></i></button>
+            </div>
+            <div class="mt-5">
+                <p class="text-xs text-gray-400 text-center">or sign in with</p>
+                <div class="flex">
+                    <button class="flex-1 bg-red-500 rounded-sm transition-all duration-300 ease-in-out hover:bg-red-600 text-white mt-4 md:mr-2 py-2 text-sm"><i class="fa-brands fa-google-plus-g mr-2"></i>Google</button>
+                    <button class="flex-1 bg-blue-800 rounded-sm transition-all duration-300 ease-in-out hover:bg-blue-900 text-white mt-4 py-2 text-sm"><i class="fa-brands fa-facebook-f mr-2"></i>Facebook</button>
+                </div>
+            </div>
+        </div>
+        <div id="signUpPage" class="hidden">
+            <div class="mt-5">
+                <p class="text-gray-400 text-xs">Mobile Number or Email address*</p>
+                <input type="text" class="w-full ring-1 ring-gray-400 my-2 rounded-sm py-2 placeholder:text-xs px-3 transition-all ease-in-out duration-300 hover:ring-green-400 focus:outline-none text-sm" placeholder="Enter your mobile number or email address">
+                
+                <p class="text-gray-400 text-xs flex-1 mt-2">Password*</p>
+                <div class="flex items-center">
+                    <input type="password" class="w-full ring-1 ring-gray-400 my-2 rounded-sm py-2 placeholder:text-xs px-3 transition-all ease-in-out duration-300 hover:ring-green-400 focus:outline-none text-sm" placeholder="Type your password" id="signPass"><i class="fa-solid fa-eye text-gray-500 -ml-7 cursor-pointer" id="signToggle"></i>
+                    </div>
+                <button class="w-full py-2 rounded-sm uppercase text-white bg-teal-500 transition-all ease-in-out duration-300 hover:bg-teal-600 text-sm font-semibold">Sign Up <i class="fa-solid fa-arrow-right-long ml-2"></i></button>
+            </div>
+            <div class="mt-5">
+                <p class="text-xs text-gray-400 text-center">or sign in with</p>
+                <div class="flex">
+                    <button class="flex-1 bg-red-500 rounded-sm transition-all duration-300 ease-in-out hover:bg-red-600 text-white mt-4 md:mr-2 py-2 text-sm"><i class="fa-brands fa-google-plus-g mr-2"></i>Google</button>
+                    <button class="flex-1 bg-blue-800 rounded-sm transition-all duration-300 ease-in-out hover:bg-blue-900 text-white mt-4 py-2 text-sm"><i class="fa-brands fa-facebook-f mr-2"></i>Facebook</button>
+                </div>
+            </div>
+        </div>
+        <div id="forgotPassword" class="hidden">
+            <div class="mt-5">
+                <p class="text-xl underline-offset-8 underline">Forgot Password?</p>
+                <p class="text-gray-400 text-xs mt-5">Mobile Number or Email address*</p>
+                <input type="text" class="w-full ring-1 ring-gray-400 my-2 rounded-sm py-2 placeholder:text-xs px-3 transition-all ease-in-out duration-300 hover:ring-green-400 focus:outline-none text-sm" placeholder="Enter your mobile number or email address">
+                <button class="w-full py-2 rounded-sm uppercase text-white bg-teal-500 transition-all ease-in-out duration-300 hover:bg-teal-600 text-sm font-semibold mt-5">Continue <i class="fa-solid fa-arrow-right-long ml-2"></i></button>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

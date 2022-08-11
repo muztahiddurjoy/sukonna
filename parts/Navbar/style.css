@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+.logo__text{
+    font-family: 'Quintessential', cursive;
+    color: #115E59;
+}
+.btn__search{
+    background-color:#1CC0A0;
+    color:#FFFFFF;
+    border-radius: 8px;
+}
