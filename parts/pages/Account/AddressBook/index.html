@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage My Account</title>
+    <link rel="stylesheet" href="/css/output.css">
+    <link rel="stylesheet" href="/css/global.css">
+</head>
+<body>
+    <button class="fixed top-2 left-0 bg-yellow-400 rounded-r-md p-3 block md:hidden" onclick="openAccountNav();">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+          
+    </button>
+    <div id="menu" class="shadow-sm py-4 bg-white flex transition-all ease-in-out duration-300 shadow-gray-500 h-full fixed md:px-5 md:py-4 items-center flex-col -ml-80 md:ml-0">
+        <div class="flex items-center">
+            <div class="flex items-center flex-1">
+            <p class="text-gray-600 mx-3">Hi, Musfiqur Rahman</p>
+            <svg width="25" height="25" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.534 6.90991C13.8202 6.80728 15.0411 6.30153 16.0232 5.46467C18.3148 3.51178 21.6852 3.51178 23.9768 5.46467C24.9589 6.30153 26.1798 6.80728 27.466 6.90991C30.4673 7.14942 32.8506 9.53271 33.0901 12.534C33.1927 13.8202 33.6985 15.0411 34.5353 16.0232C36.4882 18.3148 36.4882 21.6852 34.5353 23.9768C33.6985 24.9589 33.1927 26.1798 33.0901 27.466C32.8506 30.4673 30.4673 32.8506 27.466 33.0901C26.1798 33.1927 24.9589 33.6985 23.9768 34.5353C21.6852 36.4882 18.3148 36.4882 16.0232 34.5353C15.0411 33.6985 13.8202 33.1927 12.534 33.0901C9.53271 32.8506 7.14942 30.4673 6.90991 27.466C6.80728 26.1798 6.30153 24.9589 5.46467 23.9768C3.51178 21.6852 3.51178 18.3148 5.46467 16.0232C6.30153 15.0411 6.80728 13.8202 6.90991 12.534C7.14942 9.53271 9.53271 7.14942 12.534 6.90991ZM27.4142 17.4142C28.1953 16.6332 28.1953 15.3668 27.4142 14.5858C26.6332 13.8047 25.3668 13.8047 24.5858 14.5858L18 21.1716L15.4142 18.5858C14.6332 17.8047 13.3668 17.8047 12.5858 18.5858C11.8047 19.3668 11.8047 20.6332 12.5858 21.4142L16.5858 25.4142C17.3668 26.1953 18.6332 26.1953 19.4142 25.4142L27.4142 17.4142Z" fill="#27AE60"/>
+            </svg>    
+            </div>
+            <div class="ml-5 mr-2 cursor-pointer block md:hidden" onclick="closeAccountNav();">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>                  
+            </div>
+        </div>
+        <ul class="my-5">
+            <li class="my-3">
+                <a href="" class="text-black">Manage My Account</a>
+            </li>
+            <li class="my-3">
+                <a href="" class="text-gray-500 text-sm">My Profile</a>
+            </li>
+            <li class="my-3">
+                <a href="" class="link__color text-sm">Address Book</a>
+            </li>
+            <li class="my-3">
+                <a href="" class="text-gray-500 text-sm">My Payment Options</a>
+            </li>
+            <li class="my-3">
+                <a href="" class="text-gray-500 text-sm font-semibold">My Orders</a>
+            </li>
+            <li class="my-3">
+                <a href="" class="text-gray-500 text-sm font-semibold">My Reviews</a>
+            </li>
+            <li class="my-3">
+                <a href="" class="text-gray-500 text-sm font-semibold">My Wishlist</a>
+            </li>
+        </ul>
+    </div>
+    <div class="grid md:grid-cols-4 grid-cols-1 py-5">
+        <div class="col-span-1">
+            <!-- ⚠Don't Remove this for desktop View⚠ -->
+        </div>
+        <div class="md:col-span-3 mt-10 md:mt-0">
+            <p class="py-3 mx-3">Address Book</p>
+            <div class="grid grid-cols-1 md:space-x-3 md:pr-10 mx-5">
+              <table class="mt-7">
+                <thead>
+                    <tr>
+                        <th>
+                            <p class="text-gray-600 text-sm font-normal text-left">Full Name</p>
+                        </th>
+                        
+                        <th>
+                            <p class="text-gray-600 text-sm font-normal">Address</p>
+                        </th>
+                        
+                        <th>
+                            <p class="text-gray-600 text-sm text-right font-normal">Action</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="py-3">
+                        <td>
+                            <p class="text-gray-500 text-sm my-5">Musfiqur Rahman</p>
+                        </td>
+                        <td>
+                            <p class="text-gray-500 text-sm my-5">4140 Parker Rd. Allentown, New Mexico 31134</p>
+                        </td>
+                        <td>
+                            <div class="flex items-center justify-end my-5">
+                                <button class="text-yellow-500 text-sm mx-2 ">Edit</button>
+                                <button>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.2871 5.24297C20.6761 5.24297 21 5.56596 21 5.97696V6.35696C21 6.75795 20.6761 7.09095 20.2871 7.09095H3.71385C3.32386 7.09095 3 6.75795 3 6.35696V5.97696C3 5.56596 3.32386 5.24297 3.71385 5.24297H6.62957C7.22185 5.24297 7.7373 4.82197 7.87054 4.22798L8.02323 3.54598C8.26054 2.61699 9.0415 2 9.93527 2H14.0647C14.9488 2 15.7385 2.61699 15.967 3.49699L16.1304 4.22698C16.2627 4.82197 16.7781 5.24297 17.3714 5.24297H20.2871ZM18.8058 19.134C19.1102 16.2971 19.6432 9.55712 19.6432 9.48913C19.6626 9.28313 19.5955 9.08813 19.4623 8.93113C19.3193 8.78413 19.1384 8.69713 18.9391 8.69713H5.06852C4.86818 8.69713 4.67756 8.78413 4.54529 8.93113C4.41108 9.08813 4.34494 9.28313 4.35467 9.48913C4.35646 9.50162 4.37558 9.73903 4.40755 10.1359C4.54958 11.8992 4.94517 16.8102 5.20079 19.134C5.38168 20.846 6.50498 21.922 8.13206 21.961C9.38763 21.99 10.6811 22 12.0038 22C13.2496 22 14.5149 21.99 15.8094 21.961C17.4929 21.932 18.6152 20.875 18.8058 19.134Z" fill="#06B6D4"/>
+                                    </svg>    
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p class="text-gray-500 text-sm my-5">Musfiqur Rahman</p>
+                        </td>
+                        <td>
+                            <p class="text-gray-500 text-sm my-5">4140 Parker Rd. Allentown, New Mexico 31134</p>
+                        </td>
+                        <td>
+                            <div class="flex items-center justify-end my-5">
+                                <button class="text-yellow-500 text-sm mx-2">Edit</button>
+                                <button>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.2871 5.24297C20.6761 5.24297 21 5.56596 21 5.97696V6.35696C21 6.75795 20.6761 7.09095 20.2871 7.09095H3.71385C3.32386 7.09095 3 6.75795 3 6.35696V5.97696C3 5.56596 3.32386 5.24297 3.71385 5.24297H6.62957C7.22185 5.24297 7.7373 4.82197 7.87054 4.22798L8.02323 3.54598C8.26054 2.61699 9.0415 2 9.93527 2H14.0647C14.9488 2 15.7385 2.61699 15.967 3.49699L16.1304 4.22698C16.2627 4.82197 16.7781 5.24297 17.3714 5.24297H20.2871ZM18.8058 19.134C19.1102 16.2971 19.6432 9.55712 19.6432 9.48913C19.6626 9.28313 19.5955 9.08813 19.4623 8.93113C19.3193 8.78413 19.1384 8.69713 18.9391 8.69713H5.06852C4.86818 8.69713 4.67756 8.78413 4.54529 8.93113C4.41108 9.08813 4.34494 9.28313 4.35467 9.48913C4.35646 9.50162 4.37558 9.73903 4.40755 10.1359C4.54958 11.8992 4.94517 16.8102 5.20079 19.134C5.38168 20.846 6.50498 21.922 8.13206 21.961C9.38763 21.99 10.6811 22 12.0038 22C13.2496 22 14.5149 21.99 15.8094 21.961C17.4929 21.932 18.6152 20.875 18.8058 19.134Z" fill="#06B6D4"/>
+                                    </svg>    
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+              </table>
+              <div class="flex w-full justify-end mt-5">
+                <button class="bg-teal-500 ease-in-out transition-all duration-300 hover:bg-teal-600 text-white flex items-center justify-center px-10 py-3 rounded-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff"  viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mx-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                      </svg>                      
+                      Add New Address
+                </button>
+              </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../menu.js"></script>
+</html>

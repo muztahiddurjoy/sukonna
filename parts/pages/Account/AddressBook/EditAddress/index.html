@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage My Account</title>
+    <link rel="stylesheet" href="/css/output.css">
+    <link rel="stylesheet" href="/css/global.css">
+</head>
+<body>
+    <button class="fixed top-2 left-0 bg-yellow-400 rounded-r-md p-3 block md:hidden" onclick="openAccountNav();">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+          
+    </button>
+    <div id="menu" class="shadow-sm py-4 bg-white flex transition-all ease-in-out duration-300 shadow-gray-500 h-full fixed md:px-5 md:py-4 items-center flex-col -ml-80 md:ml-0">
+        <div class="flex items-center">
+            <div class="flex items-center flex-1">
+            <p class="text-gray-600 mx-3">Hi, Musfiqur Rahman</p>
+            <svg width="25" height="25" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.534 6.90991C13.8202 6.80728 15.0411 6.30153 16.0232 5.46467C18.3148 3.51178 21.6852 3.51178 23.9768 5.46467C24.9589 6.30153 26.1798 6.80728 27.466 6.90991C30.4673 7.14942 32.8506 9.53271 33.0901 12.534C33.1927 13.8202 33.6985 15.0411 34.5353 16.0232C36.4882 18.3148 36.4882 21.6852 34.5353 23.9768C33.6985 24.9589 33.1927 26.1798 33.0901 27.466C32.8506 30.4673 30.4673 32.8506 27.466 33.0901C26.1798 33.1927 24.9589 33.6985 23.9768 34.5353C21.6852 36.4882 18.3148 36.4882 16.0232 34.5353C15.0411 33.6985 13.8202 33.1927 12.534 33.0901C9.53271 32.8506 7.14942 30.4673 6.90991 27.466C6.80728 26.1798 6.30153 24.9589 5.46467 23.9768C3.51178 21.6852 3.51178 18.3148 5.46467 16.0232C6.30153 15.0411 6.80728 13.8202 6.90991 12.534C7.14942 9.53271 9.53271 7.14942 12.534 6.90991ZM27.4142 17.4142C28.1953 16.6332 28.1953 15.3668 27.4142 14.5858C26.6332 13.8047 25.3668 13.8047 24.5858 14.5858L18 21.1716L15.4142 18.5858C14.6332 17.8047 13.3668 17.8047 12.5858 18.5858C11.8047 19.3668 11.8047 20.6332 12.5858 21.4142L16.5858 25.4142C17.3668 26.1953 18.6332 26.1953 19.4142 25.4142L27.4142 17.4142Z" fill="#27AE60"/>
+            </svg>    
+            </div>
+            <div class="ml-5 mr-2 cursor-pointer block md:hidden" onclick="closeAccountNav();">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>                  
+            </div>
+        </div>
+        <ul class="my-5">
+            <li class="my-3">
+                <a href="" class="text-black">Manage My Account</a>
+            </li>
+            <li class="my-3">
+                <a href="" class="text-gray-500 text-sm">My Profile</a>
+            </li>
+            <li class="my-3">
+                <a href="" class="link__color text-sm">Address Book</a>
+            </li>
+            <li class="my-3">
+                <a href="" class="text-gray-500 text-sm">My Payment Options</a>
+            </li>
+            <li class="my-3">
+                <a href="" class="text-gray-500 text-sm font-semibold">My Orders</a>
+            </li>
+            <li class="my-3">
+                <a href="" class="text-gray-500 text-sm font-semibold">My Reviews</a>
+            </li>
+            <li class="my-3">
+                <a href="" class="text-gray-500 text-sm font-semibold">My Wishlist</a>
+            </li>
+        </ul>
+    </div>
+    <div class="grid md:grid-cols-4 grid-cols-1 py-5">
+        <div class="col-span-1">
+            <!-- ⚠Don't Remove this for desktop View⚠ -->
+        </div>
+        <div class="md:col-span-3 mt-10 md:mt-0">
+            <p class="py-3 mx-3">Edit My Address</p>
+            <div class="grid md:grid-cols-2 grid-cols-1 md:space-x-2 md:p-3 md:pr-10 bg-white shadow-sm shadow-gray-400 rounded-md m-2">
+                <div class="">
+                    <div class="m-3 mt-5">
+                        <p class="text-sm my-2 text-gray-600">First Name</p>
+                        <input type="text" class="w-full ring-1 ring-gray-400 px-5 placeholder:text-sm py-3 rounded-sm text-sm" placeholder="First Name">
+                    </div>
+
+                    <div class="m-3 mt-5">
+                        <p class="text-sm my-2 text-gray-600">Last Number</p>
+                        <input type="text" class="w-full ring-1 ring-gray-400 px-5 placeholder:text-sm py-3 rounded-sm text-sm" placeholder="Last Name">
+                    </div>
+
+                   
+                   
+                </div>
+                <div class="">
+                    <div class="m-3 mt-5">
+                        <p class="text-sm my-2 text-gray-600">Region</p>
+                        <select class="w-full ring-1 ring-gray-400 text-gray-500 px-5 placeholder:text-sm py-3 rounded-sm text-sm">
+                            <option value="">Bangladesh</option>
+                        </select>
+                    </div>
+                    <div class="m-3 mt-5">
+                        <p class="text-sm my-2 text-gray-600">City</p>
+                        <select class="w-full ring-1 ring-gray-400 text-gray-500 px-5 placeholder:text-sm py-3 rounded-sm text-sm">
+                            <option value="Dhaka">Dhaka</option>
+                            <option value="Chittagong">Chittagong</option>
+                            <option value="Rajshahi">Rajshahi</option>
+                            <option value="Khulna">Khulna</option>
+                            <option value="Sylhet">Sylhet</option>
+                            <option value="Rangpur">Rangpur</option>
+                            <option value="Mymensingh">Mymensingh</option>
+                            <option value="Barisal">Barisal</option>
+                            <option value="Comilla">Comilla</option>
+                            <option value="Narayanganj">Narayanganj</option>
+                            <option value="Gazipur">Gazipur</option>
+                        </select>
+                    </div>
+
+                    <div class="m-3 mt-5">
+                        <p class="text-sm my-2 text-gray-600">Area</p>
+                        <input type="text" class="w-full ring-1 ring-gray-400 px-5 placeholder:text-sm py-3 rounded-sm text-sm" placeholder="Area">
+                    </div>
+                    <div class="m-3 mt-5">
+                        <p class="text-sm my-2 text-gray-600">Address</p>
+                        <input type="text" class="w-full ring-1 ring-gray-400 px-5 placeholder:text-sm py-3 rounded-sm text-sm" placeholder="4140 Parker Rd. Allentown, New Mexico 31134">
+                    </div>
+                    <div class="mt-5 px-3 flex">
+                        <button class="w-full mx-3 my-2 bg-gray-200 transition-all hover:bg-gray-300 ease-in-out duration-300 text-gray-500 py-3 rounded-sm text-sm">Cancel</button>
+                        <button class="w-full mx-3 my-2 bg-yellow-400 transition-all hover:bg-yellow-500 ease-in-out duration-300 text-black py-3 rounded-sm text-sm">Save</button>
+                    </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+<script src="../../menu.js"></script>
+</html>

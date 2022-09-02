@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage My Account</title>
+    <link rel="stylesheet" href="/css/output.css">
+    <link rel="stylesheet" href="/css/global.css">
+</head>
+<body>
+    <button class="fixed top-2 left-0 bg-yellow-400 rounded-r-md p-3 block md:hidden" onclick="openAccountNav();">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+          
+    </button>
+    <div id="menu" class="shadow-sm py-4 bg-white flex transition-all ease-in-out duration-300 shadow-gray-500 h-full fixed md:px-5 md:py-4 items-center flex-col -ml-80 md:ml-0">
+        <div class="flex items-center">
+            <div class="flex items-center flex-1">
+            <p class="text-gray-600 mx-3">Hi, Musfiqur Rahman</p>
+            <svg width="25" height="25" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.534 6.90991C13.8202 6.80728 15.0411 6.30153 16.0232 5.46467C18.3148 3.51178 21.6852 3.51178 23.9768 5.46467C24.9589 6.30153 26.1798 6.80728 27.466 6.90991C30.4673 7.14942 32.8506 9.53271 33.0901 12.534C33.1927 13.8202 33.6985 15.0411 34.5353 16.0232C36.4882 18.3148 36.4882 21.6852 34.5353 23.9768C33.6985 24.9589 33.1927 26.1798 33.0901 27.466C32.8506 30.4673 30.4673 32.8506 27.466 33.0901C26.1798 33.1927 24.9589 33.6985 23.9768 34.5353C21.6852 36.4882 18.3148 36.4882 16.0232 34.5353C15.0411 33.6985 13.8202 33.1927 12.534 33.0901C9.53271 32.8506 7.14942 30.4673 6.90991 27.466C6.80728 26.1798 6.30153 24.9589 5.46467 23.9768C3.51178 21.6852 3.51178 18.3148 5.46467 16.0232C6.30153 15.0411 6.80728 13.8202 6.90991 12.534C7.14942 9.53271 9.53271 7.14942 12.534 6.90991ZM27.4142 17.4142C28.1953 16.6332 28.1953 15.3668 27.4142 14.5858C26.6332 13.8047 25.3668 13.8047 24.5858 14.5858L18 21.1716L15.4142 18.5858C14.6332 17.8047 13.3668 17.8047 12.5858 18.5858C11.8047 19.3668 11.8047 20.6332 12.5858 21.4142L16.5858 25.4142C17.3668 26.1953 18.6332 26.1953 19.4142 25.4142L27.4142 17.4142Z" fill="#27AE60"/>
+            </svg>    
+            </div>
+            <div class="ml-5 mr-2 cursor-pointer block md:hidden" onclick="closeAccountNav();">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>                  
+            </div>
+        </div>
+        <ul class="my-5">
+            <li class="my-3">
+                <a href="" class="link__color">Manage My Account</a>
+            </li>
+            <li class="my-3">
+                <a href="" class="text-gray-500 text-sm">My Profile</a>
+            </li>
+            <li class="my-3">
+                <a href="" class="text-gray-500 text-sm">Address Book</a>
+            </li>
+            <li class="my-3">
+                <a href="" class="text-gray-500 text-sm">My Payment Options</a>
+            </li>
+            <li class="my-3">
+                <a href="" class="text-gray-500 text-sm font-semibold">My Orders</a>
+            </li>
+            <li class="my-3">
+                <a href="" class="text-gray-500 text-sm font-semibold">My Reviews</a>
+            </li>
+            <li class="my-3">
+                <a href="" class="text-gray-500 text-sm font-semibold">My Wishlist</a>
+            </li>
+        </ul>
+    </div>
+    <div class="grid md:grid-cols-4 grid-cols-1 py-5">
+        <div class="col-span-1">
+            <!-- ⚠Don't Remove this for desktop View⚠ -->
+        </div>
+        <div class="md:col-span-3 mt-10 md:mt-0">
+            <p class="py-3 mx-3">Manage My Account</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 md:space-x-3 md:pr-10 mx-3">
+                <div class="shadow-gray-400 shadow-sm rounded-md md:p-4 p-2 mt-3 w-full">
+                    <div class="flex items-center">
+                        <p class="flex-1">Personal Profile</p>
+                        <button class="flex text-yellow-500 items-center text-sm"><svg width="20" height="20" class="mx-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_3_6508)">
+                            <path d="M16.8588 4.63204L19.369 7.14108L16.8588 4.63204ZM18.473 2.42167L11.6855 9.20923C11.3348 9.55945 11.0956 10.0057 10.9981 10.4916L10.3711 13.63L13.5095 13.0018C13.9954 12.9046 14.441 12.6664 14.7918 12.3156L21.5794 5.52804C21.7834 5.32407 21.9452 5.08193 22.0555 4.81543C22.1659 4.54894 22.2227 4.26331 22.2227 3.97486C22.2227 3.6864 22.1659 3.40077 22.0555 3.13428C21.9452 2.86778 21.7834 2.62564 21.5794 2.42167C21.3754 2.2177 21.1333 2.05591 20.8668 1.94552C20.6003 1.83514 20.3147 1.77832 20.0262 1.77832C19.7378 1.77832 19.4521 1.83514 19.1856 1.94552C18.9191 2.05591 18.677 2.2177 18.473 2.42167V2.42167Z" stroke="#F9AB46" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M19.852 16.0003V19.5558C19.852 20.1845 19.6023 20.7874 19.1577 21.2319C18.7132 21.6765 18.1103 21.9262 17.4816 21.9262H4.44459C3.81593 21.9262 3.21301 21.6765 2.76848 21.2319C2.32395 20.7874 2.07422 20.1845 2.07422 19.5558V6.51881C2.07422 5.89015 2.32395 5.28723 2.76848 4.8427C3.21301 4.39817 3.81593 4.14844 4.44459 4.14844H8.00014" stroke="#F9AB46" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_3_6508">
+                            <rect width="24" height="24" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                            Edit
+                            </button>
+                    </div>
+                    <div class="mt-4 flex items-center">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_3_6499)">
+                            <path d="M12 23.625C18.4203 23.625 23.625 18.4203 23.625 12C23.625 5.57969 18.4203 0.375 12 0.375C5.57969 0.375 0.375 5.57969 0.375 12C0.375 18.4203 5.57969 23.625 12 23.625Z" fill="#E6ECFF"/>
+                            <path d="M21.3279 18.9281C20.2437 17.4765 18.8359 16.2979 17.2164 15.4858C15.5968 14.6737 13.8102 14.2506 11.9984 14.25C10.1867 14.2494 8.39979 14.6715 6.77973 15.4825C5.15967 16.2936 3.75112 17.4714 2.66602 18.9222C3.7456 20.3804 5.15185 21.5654 6.77201 22.3821C8.39216 23.1987 10.1811 23.6244 11.9955 23.625C13.8099 23.6256 15.5991 23.201 17.2198 22.3853C18.8404 21.5697 20.2474 20.3856 21.3279 18.9281Z" fill="#4294FF"/>
+                            <path d="M12 12.75C14.4853 12.75 16.5 10.7353 16.5 8.25C16.5 5.76472 14.4853 3.75 12 3.75C9.51472 3.75 7.5 5.76472 7.5 8.25C7.5 10.7353 9.51472 12.75 12 12.75Z" fill="#4294FF"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_3_6499">
+                            <rect width="24" height="24" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                            <p class="text-gray-500 text-sm ml-3">Musfiqur Rahman</p>
+                    </div>
+                    <div class="mt-4 flex items-center">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 6.375V17.625C24 18.7922 23.0579 19.7344 21.8906 19.7344H2.10938C0.942141 19.7344 0 18.7922 0 17.625V6.375C0 5.79848 0.239016 5.27808 0.604687 4.89844H0.61875L11.55 11.1422C11.6907 11.2406 11.8454 11.2969 12 11.2969C12.1546 11.2969 12.3093 11.2407 12.45 11.1422L23.3812 4.89844H23.3953C23.761 5.27808 24 5.79848 24 6.375Z" fill="#FDBF00"/>
+                            <path d="M24 6.375V17.625C24 18.7922 23.0579 19.7344 21.8906 19.7344H12V11.2969C12.1547 11.2969 12.3093 11.2407 12.45 11.1422L23.3812 4.89844H23.3953C23.761 5.27808 24 5.79848 24 6.375Z" fill="#FF9F00"/>
+                            <path d="M23.3816 4.88437V4.89844L12.4504 13.9547C12.3097 14.0531 12.155 14.1094 12.0004 14.1094C11.8457 14.1094 11.6911 14.0532 11.5504 13.9547L0.619141 4.89844V4.88437C0.998875 4.50464 1.53325 4.26562 2.10977 4.26562H21.891C22.4675 4.26562 23.0019 4.50464 23.3816 4.88437Z" fill="#FFDE46"/>
+                            <path d="M23.3812 4.88437V4.89844L12.45 13.9547C12.3093 14.0531 12.1546 14.1094 12 14.1094V4.26562H21.8906C22.4671 4.26562 23.0015 4.50464 23.3812 4.88437Z" fill="#FFD400"/>
+                            </svg>
+                            <p class="text-gray-500 text-sm ml-3">ipsum@gmail.com</p>
+                    </div>
+                    <div class="mt-3 ml-2">
+                    <a href="" class="link__color text-sm">Subscribe to our Newsletter</a>
+                    </div>
+
+                </div>
+
+                <div class="shadow-gray-400 shadow-sm rounded-md md:p-4 p-2 mt-3 md:col-span-2 w-full">
+                    <div class="flex items-center">
+                        <p class="flex-1">Address Book</p>
+                        <button class="flex text-yellow-500 items-center text-sm"><svg width="20" height="20" class="mx-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_3_6508)">
+                            <path d="M16.8588 4.63204L19.369 7.14108L16.8588 4.63204ZM18.473 2.42167L11.6855 9.20923C11.3348 9.55945 11.0956 10.0057 10.9981 10.4916L10.3711 13.63L13.5095 13.0018C13.9954 12.9046 14.441 12.6664 14.7918 12.3156L21.5794 5.52804C21.7834 5.32407 21.9452 5.08193 22.0555 4.81543C22.1659 4.54894 22.2227 4.26331 22.2227 3.97486C22.2227 3.6864 22.1659 3.40077 22.0555 3.13428C21.9452 2.86778 21.7834 2.62564 21.5794 2.42167C21.3754 2.2177 21.1333 2.05591 20.8668 1.94552C20.6003 1.83514 20.3147 1.77832 20.0262 1.77832C19.7378 1.77832 19.4521 1.83514 19.1856 1.94552C18.9191 2.05591 18.677 2.2177 18.473 2.42167V2.42167Z" stroke="#F9AB46" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M19.852 16.0003V19.5558C19.852 20.1845 19.6023 20.7874 19.1577 21.2319C18.7132 21.6765 18.1103 21.9262 17.4816 21.9262H4.44459C3.81593 21.9262 3.21301 21.6765 2.76848 21.2319C2.32395 20.7874 2.07422 20.1845 2.07422 19.5558V6.51881C2.07422 5.89015 2.32395 5.28723 2.76848 4.8427C3.21301 4.39817 3.81593 4.14844 4.44459 4.14844H8.00014" stroke="#F9AB46" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_3_6508">
+                            <rect width="24" height="24" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                            Edit
+                            </button>
+                    </div>
+                    <div class="flex mt-2 items-center">
+                        <div class="flex-1 px-3 mt-4 border-r-2 border-gray-300 flex-col flex items-center">
+                            <a href="#" class="text-gray-500 md:text-sm my-2 text-xs">Default Shipping Address</a>
+                            <a href="#" class="text-gray-500 md:text-sm my-2 text-xs">Default Billing Address</a>
+                        </div>
+                        <div class="flex-1 px-3"> 
+                            <div class="mt-4 flex items-center">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_3_6499)">
+                                <path d="M12 23.625C18.4203 23.625 23.625 18.4203 23.625 12C23.625 5.57969 18.4203 0.375 12 0.375C5.57969 0.375 0.375 5.57969 0.375 12C0.375 18.4203 5.57969 23.625 12 23.625Z" fill="#E6ECFF"/>
+                                <path d="M21.3279 18.9281C20.2437 17.4765 18.8359 16.2979 17.2164 15.4858C15.5968 14.6737 13.8102 14.2506 11.9984 14.25C10.1867 14.2494 8.39979 14.6715 6.77973 15.4825C5.15967 16.2936 3.75112 17.4714 2.66602 18.9222C3.7456 20.3804 5.15185 21.5654 6.77201 22.3821C8.39216 23.1987 10.1811 23.6244 11.9955 23.625C13.8099 23.6256 15.5991 23.201 17.2198 22.3853C18.8404 21.5697 20.2474 20.3856 21.3279 18.9281Z" fill="#4294FF"/>
+                                <path d="M12 12.75C14.4853 12.75 16.5 10.7353 16.5 8.25C16.5 5.76472 14.4853 3.75 12 3.75C9.51472 3.75 7.5 5.76472 7.5 8.25C7.5 10.7353 9.51472 12.75 12 12.75Z" fill="#4294FF"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_3_6499">
+                                <rect width="24" height="24" fill="white"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                                <p class="text-gray-500 text-sm ml-3 font-semibold">Musfiqur Rahman</p>
+                        </div>
+                        <div class="mt-4 flex items-center">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_3_6488)">
+                                <path d="M12 0C5.37267 0 0 5.37267 0 12C0 14.4389 0.729516 16.7069 1.97958 18.6008L0 24L5.58413 22.1388C7.44 23.3156 9.63933 24 12 24C18.6273 24 24 18.6273 24 12C24 5.37267 18.6273 0 12 0Z" fill="#25AE88"/>
+                                <path d="M18.62 15.7068V17.7C18.6229 18.4341 18.0291 19.0311 17.2938 19.0345C17.252 19.0345 17.2102 19.0328 17.1684 19.0291C15.1197 18.8069 13.1517 18.1084 11.4229 16.9891C9.81446 15.9691 8.45058 14.6077 7.4281 13.0022C6.30301 11.2688 5.60288 9.29502 5.3844 7.24133C5.31821 6.51055 5.85821 5.86424 6.59058 5.798C6.63029 5.7951 6.66961 5.79303 6.70936 5.79303H8.70676C9.37505 5.78643 9.94482 6.27552 10.0383 6.93594C10.1228 7.574 10.2792 8.20007 10.5043 8.80297C10.6872 9.28878 10.5701 9.83619 10.2047 10.2049L9.3593 11.0486C10.3069 12.7121 11.6873 14.0896 13.354 15.0355L14.1994 14.1918C14.5689 13.8268 15.1176 13.7102 15.6043 13.8927C16.2084 14.1178 16.8357 14.2738 17.4751 14.3578C18.1445 14.4521 18.6369 15.0323 18.62 15.7068Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_3_6488">
+                                <rect width="24" height="24" fill="white"/>
+                                </clipPath>
+                                </defs>
+                                </svg>                                
+                                <p class="text-gray-500 text-sm ml-3">(252) 555-0126</p>
+                        </div>
+                        <div class="mt-4 flex items-center">
+                            <svg width="25" height="25" class="h-11 md:h-auto md:w-auto w-11" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 0C7.0365 0 3 4.0365 3 9C3 15.2385 11.124 23.4345 11.469 23.781C11.616 23.9265 11.808 24 12 24C12.192 24 12.384 23.9265 12.531 23.781C12.876 23.4345 21 15.2385 21 9C21 4.0365 16.9635 0 12 0Z" fill="#FFC107"/>
+                                <path d="M12 13.5C14.4853 13.5 16.5 11.4853 16.5 9C16.5 6.51472 14.4853 4.5 12 4.5C9.51472 4.5 7.5 6.51472 7.5 9C7.5 11.4853 9.51472 13.5 12 13.5Z" fill="#FAFAFA"/>
+                            </svg>
+                                                              
+                                <p class="text-gray-500 text-sm ml-3">4140 Parker Rd. Allentown, New Mexico 31134</p>
+                        </div>
+                    </div>
+                    </div>
+                   
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../menu.js"></script>
+</html>

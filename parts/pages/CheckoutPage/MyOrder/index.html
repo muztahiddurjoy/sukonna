@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders</title>
+    
+    <link rel="stylesheet" href="/css/materialize.css">
+    <link rel="stylesheet" href="/css/output.css">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="my-3 flex items-center justify-center py-3">
+        <div class="flex items-center justify-center mx-2">
+            <svg width="20" height="20" class="h-4 w-4 -mx-1 md:h-auto md:w-auto md:mx-0" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.66602 15.666L13.666 19.666L20.3327 11.666" stroke="#1CC0A0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.9993 28.3327C22.3631 28.3327 28.3327 22.3631 28.3327 14.9993C28.3327 7.63555 22.3631 1.66602 14.9993 1.66602C7.63555 1.66602 1.66602 7.63555 1.66602 14.9993C1.66602 22.3631 7.63555 28.3327 14.9993 28.3327Z" stroke="#1CC0A0" stroke-width="2"/>
+                </svg>
+                
+            <p class="link__color mx-2 text-xs md:text-lg">Cart</p>
+            <svg width="137" class="h-4 w-20 -mx-3 md:h-auto md:w-auto md:mx-0" height="2" viewBox="0 0 137 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1H136" stroke="#A1A5B6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8 14"/>
+            </svg>                
+        </div>
+        <div class="flex items-center justify-center mx-2">
+            <svg width="20" height="20" class="h-4 w-4 -mx-1 md:h-auto md:w-auto md:mx-0" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.9993 29.3327C23.3631 29.3327 29.3327 23.3631 29.3327 15.9993C29.3327 8.63555 23.3631 2.66602 15.9993 2.66602C8.63555 2.66602 2.66602 8.63555 2.66602 15.9993C2.66602 23.3631 8.63555 29.3327 15.9993 29.3327Z" stroke="#737791" stroke-width="2"/>
+                </svg>                
+            <p class="text-gray-500 mx-2 text-xs md:text-lg">Checkout</p>
+            <svg width="137" height="2" class="h-4 w-20 -mx-3 md:h-auto md:w-auto md:mx-0" viewBox="0 0 137 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1H136" stroke="#A1A5B6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8 14"/>
+            </svg>                
+        </div>
+        <div class="flex items-center justify-center mx-2">
+            <svg width="20" class="h-4 w-4 -mx-1 md:h-auto md:w-auto md:mx-0" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.9993 29.3327C23.3631 29.3327 29.3327 23.3631 29.3327 15.9993C29.3327 8.63555 23.3631 2.66602 15.9993 2.66602C8.63555 2.66602 2.66602 8.63555 2.66602 15.9993C2.66602 23.3631 8.63555 29.3327 15.9993 29.3327Z" stroke="#737791" stroke-width="2"/>
+            </svg>                
+            <p class="text-gray-500 mx-2 text-xs md:text-lg">Confirmation</p>            
+        </div>
+    </div>
+    <div class="md:mt-10 mt-5 grid grid-cols-1 md:grid-cols-8 md:px-20">
+        <div class="md:col-span-6">
+            <p class="text-lg font-semibold mx-5 md:mx-0">My Order</p>
+            <table class="table-auto w-full mt-5 text-sm">
+                <thead>
+                    <tr>
+                        <th class="font-sans text-gray-400 text-center">
+                            <label class="text-xs">
+                            <input type="checkbox" class="filled-in"/>
+                            <span class="text-xs"></span>
+                          </label>
+                        </th>
+                        <th class="font-sans text-gray-400 text-center">Product</th>
+                        <th class="font-sans text-gray-400 text-center">Price</th>
+                        <th class="font-sans text-gray-400 text-center">Quantity</th>
+                        <th class="font-sans text-gray-400 text-center">Remove</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="py-10">
+                        <td>
+                            <p>
+                                <label>
+                                  <input type="checkbox" class="filled-in" checked="checked" />
+                                  <span> </span>
+                                </label>
+                              </p>
+                        </td>
+                        <td>
+                            <div class="flex items-center flex-col md:flex-row">
+                                <img src="/src/Image.png" class="h-16 w-16" alt="" srcset="">
+                                <p class="text-xs md:text-sm text-justify md:text-left">Skullcandy Cassette Wireless On Ear Headphones
+                                </p>
+                            </div>
+
+                        </td>
+                        <td>
+                            <p class="md:text-sm text-xs text-semibold link__color">৳4500</p>
+                        </td>
+                        <td>
+                            <div class="flex items-center justify-center">
+                                <button class="px-2 py-2 disabled:ring-1 disabled:ring-gray-400 disabled:bg-transparent bg-gray-200 mx-2 text-xs md:text-md" disabled>-</button>
+                                <p class="text-sm mx-2">1</p>
+                                <button class="px-2 py-2 disabled:ring-1 disabled:ring-gray-400 disabled:bg-transparent bg-gray-200 mx-2 text-xs md:text-md">+</button>
+                            </div>
+                        </td>
+                        <td>
+                            <center>
+                            <button><svg width="32" height="32" class="h-7 w-7 md:h-auto md:w-auto" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M27.0495 6.99095C27.5682 6.99095 28 7.42161 28 7.96961V8.47627C28 9.01093 27.5682 9.45492 27.0495 9.45492H4.9518C4.43181 9.45492 4 9.01093 4 8.47627V7.96961C4 7.42161 4.43181 6.99095 4.9518 6.99095H8.83942C9.62913 6.99095 10.3164 6.42962 10.4941 5.63763L10.6976 4.7283C11.014 3.48965 12.0553 2.66699 13.247 2.66699H18.753C19.9317 2.66699 20.9847 3.48965 21.2894 4.66297L21.5072 5.6363C21.6836 6.42962 22.3709 6.99095 23.1619 6.99095H27.0495ZM25.0744 25.5124C25.4803 21.7297 26.1909 12.7432 26.1909 12.6525C26.2169 12.3778 26.1274 12.1178 25.9497 11.9085C25.7591 11.7125 25.5179 11.5965 25.2521 11.5965H6.75803C6.4909 11.5965 6.23674 11.7125 6.06038 11.9085C5.88143 12.1178 5.79326 12.3778 5.80622 12.6525C5.80861 12.6692 5.83411 12.9857 5.87674 13.5149C6.06611 15.8659 6.59356 22.4139 6.93439 25.5124C7.17558 27.795 8.67331 29.2297 10.8427 29.2817C12.5168 29.3203 14.2415 29.3337 16.0051 29.3337C17.6662 29.3337 19.3532 29.3203 21.0792 29.2817C23.3238 29.243 24.8203 27.8337 25.0744 25.5124Z" fill="#06B6D4"/>
+                                </svg>
+                                </button>
+                            </center>
+                        </td>
+                    </tr>
+                    <tr class="py-10">
+                        <td>
+                            <p>
+                                <label>
+                                  <input type="checkbox" class="filled-in" checked="checked" />
+                                  <span> </span>
+                                </label>
+                              </p>
+                        </td>
+                        <td>
+                            <div class="flex items-center flex-col md:flex-row">
+                                <img src="/src/Image.png" class="h-16 w-16" alt="" srcset="">
+                                <p class="text-xs md:text-sm text-justify md:text-left">Skullcandy Cassette Wireless On Ear Headphones
+                                </p>
+                            </div>
+
+                        </td>
+                        <td>
+                            <p class="md:text-sm text-xs text-semibold link__color">৳4500</p>
+                        </td>
+                        <td>
+                            <div class="flex items-center justify-center">
+                                <button class="px-2 py-2 disabled:ring-1 disabled:ring-gray-400 disabled:bg-transparent bg-gray-200 mx-2 text-xs md:text-md" disabled>-</button>
+                                <p class="text-sm mx-2">1</p>
+                                <button class="px-2 py-2 disabled:ring-1 disabled:ring-gray-400 disabled:bg-transparent bg-gray-200 mx-2 text-xs md:text-md">+</button>
+                            </div>
+                        </td>
+                        <td>
+                            <center>
+                            <button><svg width="32" height="32" class="h-7 w-7 md:h-auto md:w-auto" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M27.0495 6.99095C27.5682 6.99095 28 7.42161 28 7.96961V8.47627C28 9.01093 27.5682 9.45492 27.0495 9.45492H4.9518C4.43181 9.45492 4 9.01093 4 8.47627V7.96961C4 7.42161 4.43181 6.99095 4.9518 6.99095H8.83942C9.62913 6.99095 10.3164 6.42962 10.4941 5.63763L10.6976 4.7283C11.014 3.48965 12.0553 2.66699 13.247 2.66699H18.753C19.9317 2.66699 20.9847 3.48965 21.2894 4.66297L21.5072 5.6363C21.6836 6.42962 22.3709 6.99095 23.1619 6.99095H27.0495ZM25.0744 25.5124C25.4803 21.7297 26.1909 12.7432 26.1909 12.6525C26.2169 12.3778 26.1274 12.1178 25.9497 11.9085C25.7591 11.7125 25.5179 11.5965 25.2521 11.5965H6.75803C6.4909 11.5965 6.23674 11.7125 6.06038 11.9085C5.88143 12.1178 5.79326 12.3778 5.80622 12.6525C5.80861 12.6692 5.83411 12.9857 5.87674 13.5149C6.06611 15.8659 6.59356 22.4139 6.93439 25.5124C7.17558 27.795 8.67331 29.2297 10.8427 29.2817C12.5168 29.3203 14.2415 29.3337 16.0051 29.3337C17.6662 29.3337 19.3532 29.3203 21.0792 29.2817C23.3238 29.243 24.8203 27.8337 25.0744 25.5124Z" fill="#06B6D4"/>
+                                </svg>
+                                </button>
+                            </center>
+                        </td>
+                    </tr>
+                    <tr class="py-10">
+                        <td>
+                            <p>
+                                <label>
+                                  <input type="checkbox" class="filled-in" checked="checked" />
+                                  <span> </span>
+                                </label>
+                              </p>
+                        </td>
+                        <td>
+                            <div class="flex items-center flex-col md:flex-row">
+                                <img src="/src/Image.png" class="h-16 w-16" alt="" srcset="">
+                                <p class="text-xs md:text-sm text-justify md:text-left">Skullcandy Cassette Wireless On Ear Headphones
+                                </p>
+                            </div>
+
+                        </td>
+                        <td>
+                            <p class="md:text-sm text-xs text-semibold link__color">৳4500</p>
+                        </td>
+                        <td>
+                            <div class="flex items-center justify-center">
+                                <button class="px-2 py-2 disabled:ring-1 disabled:ring-gray-400 disabled:bg-transparent bg-gray-200 mx-2 text-xs md:text-md" disabled>-</button>
+                                <p class="text-sm mx-2">1</p>
+                                <button class="px-2 py-2 disabled:ring-1 disabled:ring-gray-400 disabled:bg-transparent bg-gray-200 mx-2 text-xs md:text-md">+</button>
+                            </div>
+                        </td>
+                        <td>
+                            <center>
+                            <button><svg width="32" height="32" class="h-7 w-7 md:h-auto md:w-auto" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M27.0495 6.99095C27.5682 6.99095 28 7.42161 28 7.96961V8.47627C28 9.01093 27.5682 9.45492 27.0495 9.45492H4.9518C4.43181 9.45492 4 9.01093 4 8.47627V7.96961C4 7.42161 4.43181 6.99095 4.9518 6.99095H8.83942C9.62913 6.99095 10.3164 6.42962 10.4941 5.63763L10.6976 4.7283C11.014 3.48965 12.0553 2.66699 13.247 2.66699H18.753C19.9317 2.66699 20.9847 3.48965 21.2894 4.66297L21.5072 5.6363C21.6836 6.42962 22.3709 6.99095 23.1619 6.99095H27.0495ZM25.0744 25.5124C25.4803 21.7297 26.1909 12.7432 26.1909 12.6525C26.2169 12.3778 26.1274 12.1178 25.9497 11.9085C25.7591 11.7125 25.5179 11.5965 25.2521 11.5965H6.75803C6.4909 11.5965 6.23674 11.7125 6.06038 11.9085C5.88143 12.1178 5.79326 12.3778 5.80622 12.6525C5.80861 12.6692 5.83411 12.9857 5.87674 13.5149C6.06611 15.8659 6.59356 22.4139 6.93439 25.5124C7.17558 27.795 8.67331 29.2297 10.8427 29.2817C12.5168 29.3203 14.2415 29.3337 16.0051 29.3337C17.6662 29.3337 19.3532 29.3203 21.0792 29.2817C23.3238 29.243 24.8203 27.8337 25.0744 25.5124Z" fill="#06B6D4"/>
+                                </svg>
+                                </button>
+                            </center>
+                        </td>
+                    </tr>
+                    <tr class="py-10">
+                        <td>
+                            <p>
+                                <label>
+                                  <input type="checkbox" class="filled-in" checked="checked" />
+                                  <span> </span>
+                                </label>
+                              </p>
+                        </td>
+                        <td>
+                            <div class="flex items-center flex-col md:flex-row">
+                                <img src="/src/Image.png" class="h-16 w-16" alt="" srcset="">
+                                <p class="text-xs md:text-sm text-justify md:text-left">Skullcandy Cassette Wireless On Ear Headphones
+                                </p>
+                            </div>
+
+                        </td>
+                        <td>
+                            <p class="md:text-sm text-xs text-semibold link__color">৳4500</p>
+                        </td>
+                        <td>
+                            <div class="flex items-center justify-center">
+                                <button class="px-2 py-2 disabled:ring-1 disabled:ring-gray-400 disabled:bg-transparent bg-gray-200 mx-2 text-xs md:text-md" disabled>-</button>
+                                <p class="text-sm mx-2">1</p>
+                                <button class="px-2 py-2 disabled:ring-1 disabled:ring-gray-400 disabled:bg-transparent bg-gray-200 mx-2 text-xs md:text-md">+</button>
+                            </div>
+                        </td>
+                        <td>
+                            <center>
+                            <button><svg width="32" height="32" class="h-7 w-7 md:h-auto md:w-auto" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M27.0495 6.99095C27.5682 6.99095 28 7.42161 28 7.96961V8.47627C28 9.01093 27.5682 9.45492 27.0495 9.45492H4.9518C4.43181 9.45492 4 9.01093 4 8.47627V7.96961C4 7.42161 4.43181 6.99095 4.9518 6.99095H8.83942C9.62913 6.99095 10.3164 6.42962 10.4941 5.63763L10.6976 4.7283C11.014 3.48965 12.0553 2.66699 13.247 2.66699H18.753C19.9317 2.66699 20.9847 3.48965 21.2894 4.66297L21.5072 5.6363C21.6836 6.42962 22.3709 6.99095 23.1619 6.99095H27.0495ZM25.0744 25.5124C25.4803 21.7297 26.1909 12.7432 26.1909 12.6525C26.2169 12.3778 26.1274 12.1178 25.9497 11.9085C25.7591 11.7125 25.5179 11.5965 25.2521 11.5965H6.75803C6.4909 11.5965 6.23674 11.7125 6.06038 11.9085C5.88143 12.1178 5.79326 12.3778 5.80622 12.6525C5.80861 12.6692 5.83411 12.9857 5.87674 13.5149C6.06611 15.8659 6.59356 22.4139 6.93439 25.5124C7.17558 27.795 8.67331 29.2297 10.8427 29.2817C12.5168 29.3203 14.2415 29.3337 16.0051 29.3337C17.6662 29.3337 19.3532 29.3203 21.0792 29.2817C23.3238 29.243 24.8203 27.8337 25.0744 25.5124Z" fill="#06B6D4"/>
+                                </svg>
+                                </button>
+                            </center>
+                        </td>
+                    </tr>
+                    <tr class="py-10">
+                        <td>
+                            <p>
+                                <label>
+                                  <input type="checkbox" class="filled-in" checked="checked" />
+                                  <span class="invisible"></span>
+                                </label>
+                              </p>
+                        </td>
+                        <td>
+                            <div class="flex items-center flex-col md:flex-row">
+                                <img src="/src/Image.png" class="h-16 w-16" alt="" srcset="">
+                                <p class="text-xs md:text-sm text-justify md:text-left">Skullcandy Cassette Wireless On Ear Headphones
+                                </p>
+                            </div>
+
+                        </td>
+                        <td>
+                            <p class="md:text-sm text-xs text-semibold link__color">৳4500</p>
+                        </td>
+                        <td>
+                            <div class="flex items-center justify-center">
+                                <button class="px-2 py-2 disabled:ring-1 disabled:ring-gray-400 disabled:bg-transparent bg-gray-200 mx-2 text-xs md:text-md" disabled>-</button>
+                                <p class="text-sm mx-2">1</p>
+                                <button class="px-2 py-2 disabled:ring-1 disabled:ring-gray-400 disabled:bg-transparent bg-gray-200 mx-2 text-xs md:text-md">+</button>
+                            </div>
+                        </td>
+                        <td>
+                            <center>
+                            <button><svg width="32" height="32" class="h-7 w-7 md:h-auto md:w-auto" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M27.0495 6.99095C27.5682 6.99095 28 7.42161 28 7.96961V8.47627C28 9.01093 27.5682 9.45492 27.0495 9.45492H4.9518C4.43181 9.45492 4 9.01093 4 8.47627V7.96961C4 7.42161 4.43181 6.99095 4.9518 6.99095H8.83942C9.62913 6.99095 10.3164 6.42962 10.4941 5.63763L10.6976 4.7283C11.014 3.48965 12.0553 2.66699 13.247 2.66699H18.753C19.9317 2.66699 20.9847 3.48965 21.2894 4.66297L21.5072 5.6363C21.6836 6.42962 22.3709 6.99095 23.1619 6.99095H27.0495ZM25.0744 25.5124C25.4803 21.7297 26.1909 12.7432 26.1909 12.6525C26.2169 12.3778 26.1274 12.1178 25.9497 11.9085C25.7591 11.7125 25.5179 11.5965 25.2521 11.5965H6.75803C6.4909 11.5965 6.23674 11.7125 6.06038 11.9085C5.88143 12.1178 5.79326 12.3778 5.80622 12.6525C5.80861 12.6692 5.83411 12.9857 5.87674 13.5149C6.06611 15.8659 6.59356 22.4139 6.93439 25.5124C7.17558 27.795 8.67331 29.2297 10.8427 29.2817C12.5168 29.3203 14.2415 29.3337 16.0051 29.3337C17.6662 29.3337 19.3532 29.3203 21.0792 29.2817C23.3238 29.243 24.8203 27.8337 25.0744 25.5124Z" fill="#06B6D4"/>
+                                </svg>
+                                </button>
+                            </center>
+                        </td>
+                    </tr>
+                  
+                </tbody>
+            </table>
+        </div>
+        <div class="md:col-span-2 md:pl-7">
+            <div class="rounded-lg ring-1 ring-yellow-500 p-3 mx-5 md:mx-0">
+                <p class="font-semibold my-3 text-lg">Summary</p>
+                <div class="flex my-4 text-sm">
+                    <p class="flex-1 text-left text-gray-500">Subtotal</p>
+                    <p class="flex-1 text-right">৳4500</p>
+                </div>
+                <div class="flex my-4 text-sm">
+                    <p class="flex-1 text-left text-gray-500">Delivery fee</p>
+                    <p class="flex-1 text-right">৳60</p>
+                </div>
+                <hr>
+                <div class="flex my-4 text-sm">
+                    <p class="flex-1 text-left text-gray-500">Total Price</p>
+                    <p class="flex-1 text-right">৳ 4560</p>
+                </div>
+                <button class="bg-teal-500 transition-all ease-in-out duration-300 hover:bg-teal-600 text-center text-white w-full rounded-sm py-3 mt-5">Confirm Order</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>
