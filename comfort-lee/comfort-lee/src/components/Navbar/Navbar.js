@@ -1,0 +1,170 @@
+import React, { useState } from 'react'
+import Drawer from '@mui/material/Drawer'
+import { List, ListItem, ListItemText } from '@mui/material'
+import logo from '../../img/Logo.png'
+const Navbar = () => {
+  const [open, setopen] = useState(false)
+  return (
+    <>
+    <nav className="fixed bg-white md:px-14 px-5 py-2 shadow-sm shadow-slate-300 w-full md:py-3">
+        <div className="flex items-center">
+        <div className="flex items-center flex-1">
+            <p className="md:hidden cursor-pointer mx-2" onClick={setopen}>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#facc15" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 17H21" stroke="#06091A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3 12H21" stroke="#06091A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3 7H21" stroke="#06091A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </p>
+
+            <img src={logo} alt="Comfort Lee Logo" title="Comfort Lee Logo" className="md:w-10 h-10 w-10 md:h-10"/>
+            <p className="logo__text text-lg md:mx-3 mx-2">Comfort Lee</p>
+        </div>
+        <p className="md:hidden"><i className="fa-solid fa-magnifying-glass text-xl link__color"></i></p>
+        <div className="flex-1 w-auto items-center ring-1 hidden md:flex ring-slate-300 rounded-md transition-all duration-200 ease-in-out">
+            <i className="fa-solid fa-magnifying-glass text-gray-400 ml-3"></i>
+            <input type="text" className="focus:outline-none py-2 px-3 text-sm placeholder:text-gray-400" placeholder="Search Here..."/>
+            <div className="flex-1 flex justify-end">
+            <button className="btn__search text-sm px-5 py-3">Search</button>
+            </div>
+
+        </div>
+        <div className="flex-1 md:flex items-center md:justify-end md:px-5 hidden">
+            <div className="heart md:mx-3 cursor-pointer">
+                <svg width="25" height="25" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 26.6666L15.6107 27.3655C15.8527 27.5003 16.1473 27.5003 16.3893 27.3655L16 26.6666ZM16 9.54953L15.2637 9.86242C15.3892 10.1578 15.6791 10.3495 16 10.3495C16.3209 10.3495 16.6108 10.1578 16.7363 9.86242L16 9.54953ZM3.2 11.963C3.2 16.3457 6.44825 20.2289 9.46776 22.9196C11.003 24.2877 12.5345 25.3962 13.6805 26.1621C14.2542 26.5456 14.7333 26.8445 15.0704 27.0483C15.239 27.1503 15.3723 27.2285 15.4643 27.2818C15.5103 27.3085 15.546 27.3289 15.5706 27.3429C15.5829 27.3499 15.5925 27.3553 15.5992 27.359C15.6026 27.3609 15.6052 27.3624 15.6072 27.3635C15.6081 27.364 15.6089 27.3645 15.6095 27.3648C15.6098 27.365 15.6101 27.3651 15.6103 27.3652C15.6105 27.3654 15.6107 27.3655 16 26.6666C16.3893 25.9677 16.3894 25.9677 16.3895 25.9678C16.3894 25.9678 16.3895 25.9678 16.3894 25.9678C16.3893 25.9677 16.389 25.9675 16.3885 25.9672C16.3875 25.9667 16.3858 25.9657 16.3834 25.9644C16.3786 25.9617 16.3709 25.9574 16.3605 25.9515C16.3398 25.9397 16.3081 25.9216 16.2662 25.8973C16.1824 25.8488 16.0578 25.7756 15.8983 25.6792C15.5792 25.4862 15.1208 25.2003 14.5695 24.8319C13.4655 24.094 11.997 23.0304 10.5322 21.7251C7.55175 19.0691 4.8 15.6005 4.8 11.963H3.2ZM16.7363 9.23663C15.258 5.758 11.9041 4.16777 8.88562 4.60382C7.37277 4.82237 5.9397 5.5514 4.88716 6.80577C3.83244 8.06275 3.2 9.79847 3.2 11.963H4.8C4.8 10.1175 5.33423 8.76214 6.11284 7.83423C6.89363 6.90371 7.96056 6.35407 9.11438 6.18739C11.4292 5.85298 14.0754 7.06607 15.2637 9.86242L16.7363 9.23663ZM27.2 11.963C27.2 15.6005 24.4482 19.0691 21.4678 21.7251C20.003 23.0304 18.5345 24.094 17.4305 24.8319C16.8792 25.2003 16.4208 25.4862 16.1017 25.6792C15.9422 25.7756 15.8176 25.8488 15.7338 25.8973C15.6919 25.9216 15.6602 25.9397 15.6395 25.9515C15.6291 25.9574 15.6214 25.9617 15.6166 25.9644C15.6142 25.9657 15.6125 25.9667 15.6115 25.9672C15.611 25.9675 15.6107 25.9677 15.6106 25.9678C15.6105 25.9678 15.6106 25.9678 15.6105 25.9678C15.6106 25.9677 15.6107 25.9677 16 26.6666C16.3893 27.3655 16.3895 27.3654 16.3897 27.3652C16.3899 27.3651 16.3902 27.365 16.3905 27.3648C16.3911 27.3645 16.3919 27.364 16.3928 27.3635C16.3948 27.3624 16.3974 27.3609 16.4008 27.359C16.4075 27.3553 16.4171 27.3499 16.4294 27.3429C16.454 27.3289 16.4897 27.3085 16.5357 27.2818C16.6277 27.2285 16.761 27.1503 16.9296 27.0483C17.2667 26.8445 17.7458 26.5456 18.3195 26.1621C19.4655 25.3962 20.997 24.2877 22.5322 22.9196C25.5518 20.2289 28.8 16.3457 28.8 11.963H27.2ZM16.7363 9.86242C17.9246 7.06607 20.5708 5.85298 22.8856 6.18739C24.0394 6.35407 25.1064 6.90371 25.8872 7.83423C26.6658 8.76214 27.2 10.1175 27.2 11.963H28.8C28.8 9.79847 28.1676 8.06275 27.1128 6.80577C26.0603 5.5514 24.6272 4.82237 23.1144 4.60382C20.0959 4.16777 16.742 5.758 15.2637 9.23663L16.7363 9.86242Z" fill="#06091A"/>
+                </svg>
+                <div className="-mt-7 ml-5 bg-yellow-400 rounded-full text-xs h-4 text-center w-4">2</div>
+            </div>
+            <div className="bag md:mx-3 cursor-pointer">
+                <svg width="25" height="25" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M22.0191 28.6667H10.8887C6.80022 28.6667 3.66368 27.19 4.55461 21.2464L5.59198 13.1915C6.14118 10.2258 8.03287 9.09082 9.69267 9.09082H23.264C24.9482 9.09082 26.73 10.3113 27.3647 13.1915L28.4021 21.2464C29.1587 26.5187 26.1076 28.6667 22.0191 28.6667Z" stroke="#06091A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M22.2016 8.79789C22.2016 5.61646 19.6226 3.03741 16.4411 3.03741V3.03741C14.9091 3.03091 13.4377 3.63495 12.3521 4.71596C11.2665 5.79697 10.6562 7.26588 10.6563 8.79789H10.6562" stroke="#06091A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20.3966 14.8024H20.3356" stroke="#06091A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12.6212 14.8024H12.5602" stroke="#06091A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div className="-mt-7 ml-5 bg-yellow-400 rounded-full text-xs h-4 text-center w-4">3</div>
+            </div>
+            <div className="user md:mx-3 cursor-pointer">
+                <svg width="25" height="25" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 25.3333C8 22.3878 11.5817 20 16 20C20.4183 20 24 22.3878 24 25.3333" stroke="#06091A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15.9993 15.9999C18.9449 15.9999 21.3327 13.6121 21.3327 10.6666C21.3327 7.72107 18.9449 5.33325 15.9993 5.33325C13.0538 5.33325 10.666 7.72107 10.666 10.6666C10.666 13.6121 13.0538 15.9999 15.9993 15.9999Z" stroke="#06091A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <div className="-mt-7 ml-5 bg-yellow-400 rounded-full text-xs h-4 text-center w-4 invisible">3</div>
+            </div>
+             
+        </div>
+        </div>
+
+        <div className="md:flex md:mt-12 hidden">
+            <div className="flex-1 flex items-center">
+                <svg className="cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" onClick={e=> setopen(true)}>
+                    <path d="M3 17H21" stroke="#06091A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3 12H21" stroke="#06091A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3 7H21" stroke="#06091A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                <p className="font-semibold px-3 text-sm">Browse Categories</p>    
+                <svg className="ml-1" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.7071 1.70711C16.0976 1.31658 16.0976 0.683417 15.7071 0.292893C15.3166 -0.0976311 14.6834 -0.097631 14.2929 0.292893L15.7071 1.70711ZM8 8L7.29289 8.70711C7.48043 8.89465 7.73478 9 8 9C8.26522 9 8.51957 8.89465 8.70711 8.70711L8 8ZM1.70711 0.292893C1.31658 -0.097631 0.683418 -0.0976311 0.292893 0.292893C-0.097631 0.683417 -0.0976311 1.31658 0.292893 1.70711L1.70711 0.292893ZM14.2929 0.292893L7.29289 7.2929L8.70711 8.70711L15.7071 1.70711L14.2929 0.292893ZM8.70711 7.2929L1.70711 0.292893L0.292893 1.70711L7.29289 8.70711L8.70711 7.2929Z" fill="#06091A"/>
+                </svg>
+            </div>
+            <div className="flex-1 flex justify-end">
+                <div className="flex text-gray-600">
+                    <a href="tel:+8801304409280" className="flex items-center mx-3 text-sm">
+                    <svg width="20" height="20" className="mx-2" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.67052 2.67629L9.02058 2.93626L9.02058 2.93627L9.67052 2.67629ZM11.0762 6.19051L11.7261 5.93053L11.7261 5.93053L11.0762 6.19051ZM10.6489 8.88804L11.1866 9.33617L11.1866 9.33617L10.6489 8.88804ZM9.89233 9.79587L10.4301 10.244L10.4301 10.244L9.89233 9.79587ZM10.0553 13.3886L9.56033 13.8836L9.56033 13.8836L10.0553 13.3886ZM12.6114 15.9447L13.1063 15.4497L13.1063 15.4497L12.6114 15.9447ZM16.2041 16.1077L15.756 15.5699L15.756 15.5699L16.2041 16.1077ZM17.112 15.3511L17.5601 15.8889L17.5601 15.8889L17.112 15.3511ZM19.8095 14.9238L19.5495 15.5737L19.5495 15.5737L19.8095 14.9238ZM23.3237 16.3295L23.5837 15.6795L23.5837 15.6795L23.3237 16.3295ZM3.52632 1.7H7.19458V0.3H3.52632V1.7ZM9.02058 2.93627L10.4263 6.45048L11.7261 5.93053L10.3205 2.41632L9.02058 2.93627ZM10.1111 8.43991L9.35458 9.34774L10.4301 10.244L11.1866 9.33617L10.1111 8.43991ZM9.56033 13.8836L12.1164 16.4397L13.1063 15.4497L10.5503 12.8937L9.56033 13.8836ZM16.6523 16.6454L17.5601 15.8889L16.6638 14.8134L15.756 15.5699L16.6523 16.6454ZM19.5495 15.5737L23.0637 16.9794L23.5837 15.6795L20.0695 14.2739L19.5495 15.5737ZM24.3 18.8054V22.4737H25.7V18.8054H24.3ZM22.4737 24.3C11.0007 24.3 1.7 14.9993 1.7 3.52632H0.3C0.3 15.7725 10.2275 25.7 22.4737 25.7V24.3ZM24.3 22.4737C24.3 23.4823 23.4823 24.3 22.4737 24.3V25.7C24.2555 25.7 25.7 24.2555 25.7 22.4737H24.3ZM23.0637 16.9794C23.8104 17.2781 24.3 18.0012 24.3 18.8054H25.7C25.7 17.4288 24.8619 16.1908 23.5837 15.6795L23.0637 16.9794ZM17.5601 15.8889C18.115 15.4265 18.8788 15.3055 19.5495 15.5737L20.0695 14.2739C18.9213 13.8146 17.6138 14.0217 16.6638 14.8134L17.5601 15.8889ZM12.1164 16.4397C13.3476 17.6709 15.3146 17.7601 16.6523 16.6454L15.756 15.5699C14.9746 16.2211 13.8256 16.169 13.1063 15.4497L12.1164 16.4397ZM9.35458 9.34774C8.23986 10.6854 8.32908 12.6524 9.56033 13.8836L10.5503 12.8937C9.83104 12.1744 9.77892 11.0254 10.4301 10.244L9.35458 9.34774ZM10.4263 6.45048C10.6945 7.12118 10.5735 7.88497 10.1111 8.43991L11.1866 9.33617C11.9783 8.38619 12.1854 7.07868 11.7261 5.93053L10.4263 6.45048ZM7.19458 1.7C7.99876 1.7 8.72192 2.1896 9.02058 2.93626L10.3205 2.41632C9.80918 1.13813 8.57122 0.3 7.19458 0.3V1.7ZM3.52632 0.3C1.74447 0.3 0.3 1.74447 0.3 3.52632H1.7C1.7 2.51767 2.51767 1.7 3.52632 1.7V0.3Z" fill="#444A6D"/>
+                    </svg>
+                    01304409280          
+                    </a>
+                    <a href="mailto:comfortlee.com@gmail.com" className="flex items-center mx-3 text-gray-600 text-sm">
+                        <svg width="25" height="25" className="mx-2" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M26.6667 6.66675H5.33333C4.59695 6.66675 4 7.2637 4 8.00008V24.0001C4 24.7365 4.59695 25.3334 5.33333 25.3334H26.6667C27.403 25.3334 28 24.7365 28 24.0001V8.00008C28 7.2637 27.403 6.66675 26.6667 6.66675Z" stroke="#444A6D" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4 8L16.3429 17.3333L28 8" stroke="#444A6D" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        comfortlee.com@gmail.com
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div className="md:hidden w-full p-3 flex fixed bottom-0 left-0 right-0">
+        <a href="#" className="flex-1 justify-center flex">
+            <div className="cursor-pointer">
+                <i className="fa-solid fa-house text-2xl link__color"></i>
+                <div className="-mt-7 ml-5 bg-yellow-400 z-50 rounded-full text-xs h-4 text-center w-4 hidden">2</div>
+            </div>
+        </a>
+        <a href="#" className="flex-1 justify-center flex">
+            <div className="cursor-pointer">
+                <i className="fa-solid fa-heart text-2xl text-gray-400"></i>
+                <div className="-mt-7 ml-5 bg-yellow-400 z-50 rounded-full text-xs h-4 text-center w-4">2</div>
+            </div>
+        </a>
+        <a href="#" className="flex-1 justify-center flex">
+            <div className="cursor-pointer">
+                <i className="fa-solid fa-bag-shopping text-2xl text-gray-400"></i>
+                <div className="-mt-7 ml-5 bg-yellow-400 z-50 rounded-full text-xs h-4 text-center w-4 hidden">2</div>
+            </div>
+        </a>
+        <a href="#" className="flex-1 justify-center flex">
+            <div className="cursor-pointer">
+                <i className="fa-solid fa-user text-2xl text-gray-400"></i>
+                <div className="-mt-7 ml-5 bg-yellow-400 z-50 rounded-full text-xs h-4 text-center w-4 hidden">2</div>
+            </div>
+        </a>
+    </div>
+    <Drawer
+      variant="temporary"
+      anchor="left"
+      open={open}
+      onClose={e=> setopen(!open)}
+    >
+      <List>
+        <ListItem>
+          <ListItemText>
+          <p className="text-gray-500 font-light flex text-sm mx-2 py-4"><span className="flex-4"> Gadget Accessories</span><i className="fa-solid fa-angle-down ml-2 flex-1 text-right"></i></p> 
+          </ListItemText>
+        </ListItem>
+        <ListItem>
+          <ListItemText>
+          <p className="text-gray-500 font-light flex text-sm mx-2 py-4"><span className="flex-4"> Shaving & Grooming</span><i className="fa-solid fa-angle-down ml-2 flex-1 text-right"></i></p>
+          </ListItemText>
+        </ListItem>
+        <ListItem>
+          <ListItemText>
+          <p className="text-gray-500 font-light flex text-sm mx-2 py-4"><span className="flex-4"> Healthy & Beauty</span><i className="fa-solid fa-angle-down ml-2 flex-1 text-right"></i></p>
+          </ListItemText>
+        </ListItem>
+        <ListItem>
+          <ListItemText>
+          <p className="text-gray-500 font-light flex text-sm mx-2 py-4"><span className="flex-4"> Fashion</span><i className="fa-solid fa-angle-down ml-2 flex-1 text-right"></i></p>
+          </ListItemText>
+        </ListItem>
+        <ListItem>
+          <ListItemText>
+          <p className="text-gray-500 font-light flex text-sm mx-2 py-4"><span className="flex-4"> Bags & Travel</span><i className="fa-solid fa-angle-down ml-2 flex-1 text-right"></i></p>
+          </ListItemText>
+        </ListItem>
+        <ListItem>
+          <ListItemText>
+          <p className="text-gray-500 font-light flex text-sm mx-2 py-4"><span className="flex-4"> Babies &  Toys</span><i className="fa-solid fa-angle-down ml-2 flex-1 text-right"></i></p>
+          </ListItemText>
+        </ListItem>
+        <ListItem>
+          <ListItemText>
+          <p className="text-gray-500 font-light flex text-sm mx-2 py-4"><span className="flex-4"> Home & Lifestyle</span><i className="fa-solid fa-angle-down ml-2 flex-1 text-right"></i></p>
+          </ListItemText>
+        </ListItem>
+        <ListItem>
+          <ListItemText>
+          <p className="text-gray-500 font-light flex text-sm mx-2 py-4"><span className="flex-4"> Groceries</span><i className="fa-solid fa-angle-down ml-2 flex-1 text-right"></i></p>
+          </ListItemText>
+        </ListItem>
+      </List>
+    </Drawer>
+   
+    </>
+  )
+}
+
+export default Navbar
